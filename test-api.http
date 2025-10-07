@@ -1,0 +1,27 @@
+### GET request to example server
+GET http://localhost:8080/actors
+
+### GET request to
+GET http://localhost:8080/actors/1
+
+### POST
+POST http://localhost:8080/actors
+Content-Type: application/json
+
+{
+  "first_name": "",
+  "last_name": "minh",
+  "last_update": "2025-06-10 10:25:33"
+}
+
+### Delete
+DELETE http://localhost:8080/actors/201
+
+### Update
+PUT http://localhost:8080/actors/1
+Content-Type: application/json
+
+{
+  "first_name": "hoang",
+  "last_name": "minh"
+}
