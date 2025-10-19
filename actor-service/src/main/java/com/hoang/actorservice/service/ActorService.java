@@ -5,7 +5,6 @@ import com.hoang.actorservice.dto.ActorResponseDTO;
 import com.hoang.actorservice.mapper.ActorMapper;
 import com.hoang.actorservice.model.Actor;
 import com.hoang.actorservice.repository.ActorRepository;
-import jakarta.persistence.criteria.CriteriaBuilder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

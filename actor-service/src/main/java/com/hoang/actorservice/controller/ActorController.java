@@ -2,7 +2,6 @@ package com.hoang.actorservice.controller;
 
 import com.hoang.actorservice.dto.ActorRequestDTO;
 import com.hoang.actorservice.dto.ActorResponseDTO;
-import com.hoang.actorservice.model.Actor;
 import com.hoang.actorservice.service.ActorService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
