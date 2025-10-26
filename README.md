@@ -115,13 +115,29 @@ docker compose down -v
 ```
 
 ---
+## 6. Thêm 1 cột trong db để lưu log
+
+```bash
+CREATE TABLE IF NOT EXISTS api_logs (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    endpoint VARCHAR(255) NOT NULL,
+    execution_time BIGINT,
+    method VARCHAR(255),
+    request_body TEXT,
+    response_body TEXT,
+    status_code INT,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
+---
 
 ## 7. Giám sát log ứng dụng với ELK Stack (Elasticsearch + Kibana + Filebeat)
 
 Cấu hình Docker Compose (thư mục docker-compose.yml kèm filebeat.yml ở ngoài cùng)
 
 ```bash
-docker compose down -v
+cd..
+docker compose up
 ```
 
 ---
